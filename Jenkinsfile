@@ -7,10 +7,10 @@ pipeline {
         choices: "Option1\nOption2",
         description: 'interesting stuff' )
         activeChoiceParam(
-            name : 'CHOICE1' 
-            filterable : true
-            choiceType : 'SINGLE_SELECT'
-            groovyScript {
+            name : 'CHOICE1' ,
+            filterable : true,
+            choiceType : 'SINGLE_SELECT',
+            groovyScript : {
                 script('["choice1", "choice2"]')
                 fallbackScript('"fallback choice"')
             }
