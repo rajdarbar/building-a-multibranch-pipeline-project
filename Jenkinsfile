@@ -8,7 +8,6 @@ pipeline {
         description: 'interesting stuff' )
         activeChoiceParam(
             name : 'CHOICE1' 
-            description : 'Allows user choose from multiple choices'
             filterable : true
             choiceType : 'SINGLE_SELECT'
             groovyScript {
